@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Shit People</title>
+	<!--Bootstrap Load -->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<!--Angularjs Load -->
+	<script src="js/angular.min.js"></script>
+	<!--Controllers/scripts folder -->
+	<script src="features/controller.js"></script>
+
+</head>
+
+<body ng-app="">
+	<div class="container" ng-controller="Test">
+		<h1>Shit People</h1>
+		{{message}}
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Let's Search Some ModerFuckers!!!</th>
+				</tr>
+				<form ng-submit="submit()">
+				<tr>
+					<td>
+						<input type="text" class="form-control" ng-model="data.test"/>
+					</td>
+					<td>
+						<button class="btn btn-primary" ng-click="search()">Search Hier Bitch!!!</button>
+					</td>
+				</tr>
+				</form>
+				<tr ng-repeat="x in serviceClients">
+					<td>
+						{{x.name}}
+					</td>
+					<td>
+						{{x.remarks}}
+					</td>
+				</tr>
+		</table>
+
+
+	</div>
+</body>
+
+
+</html>
+
