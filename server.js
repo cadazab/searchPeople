@@ -9,9 +9,9 @@ var bodyParser = require ('body-parser')
 
 //configure database conection
 var pool = mysql.createPool({
-	host     : '192.168.186.49',
-  user     : 'camilo',
-  password : 'duls3data'
+	host     : 'localhost',
+  	user     : 'root',
+  	password : 'duls3data'
 })
 
 //directori to load the files
