@@ -26,7 +26,7 @@ app.post("/dbsearch", function(req,res){
 	var svc = svc.test
 
   pool.getConnection(function(err, connection) {
-  	connection.query("SELECT * FROM duls.Name WHERE name like '%"+svc+"%';",function(err, rows, fields){
+  	connection.query("SELECT name FROM Shitpeople.Name WHERE name like '%"+svc+"%';",function(err, rows, fields){
   		if (err) throw err;
       res.json(rows);
       connection.release();
